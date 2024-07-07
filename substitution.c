@@ -1,0 +1,22 @@
+#include <cs50.h>
+#include <stdio.h>
+#include <string.h>
+
+int main(int argc, string argv[])
+{
+
+    // Validate the Key provided and suggest modifications if necessary
+    if (argc != 2)
+    {
+        printf("Usage: %s <key>\n", argv[0]);
+        return 1;
+    }
+
+    else if (strlen(argv[1]) != 26)
+    {
+        printf("Key must contain 26 characters.\n");
+        return 1;
+    }
+
+    return 0;
+}
